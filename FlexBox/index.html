@@ -40,7 +40,7 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Welcome to Courses</h1>
+          <h1><span class="typed-text"></span></h1>
           <p>
             Transform your ideas into reality with our cutting-edge solutions.
             We help businesses grow and succeed in the digital age with
@@ -100,5 +100,21 @@
       </div>
     </footer>
     <a href="../index.html" class="home"><i class="fa-solid fa-house"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Initialize Typed.js
+      const options = {
+        strings: [
+          "Learn Web Development with us.",
+          "Master Java, Python, and more!",
+          "Start your tech journey today.",
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+      };
+
+      const typed = new Typed(".typed-text", options);
+    </script>
   </body>
 </html>
