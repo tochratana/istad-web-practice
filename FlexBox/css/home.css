@@ -3,8 +3,14 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: black;
+  --secondary-color: #eb8317;
+  --tertiary-color: #f4f6ff;
+}
 .banner {
-  background-color: #eb8317;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +32,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4f6ff;
+  background-color: var(--tertiary-color);
   padding: 0 30px;
 }
-ul {
+.tab {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -38,7 +44,7 @@ ul {
   padding: 0;
 }
 
-ul > li > a {
+.tab > li > a {
   text-decoration: none;
   color: black;
 }
@@ -50,10 +56,10 @@ ul > li > a {
 }
 
 .social > a {
-  background-color: #10375c;
+  background-color: var(--primary-color);
   padding: 5px 20px;
   border-radius: 5px;
-  color: #eb8317;
+  color: var(--secondary-color);
 }
 
 .containerIframe {
@@ -63,6 +69,6 @@ ul > li > a {
 
 .iframe {
   width: 95%;
-  height: 1500px;
+  height: 2500px;
   border-radius: 10px;
 }

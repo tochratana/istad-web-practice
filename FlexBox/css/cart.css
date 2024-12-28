@@ -6,6 +6,13 @@ body {
 * {
   font-family: sans-serif;
 }
+
+:root {
+  --primary-text: black;
+  --primary-color: black;
+  --secondary-color: #eb8317;
+  --tertiary-color: #f4f6ff;
+}
 .container {
   display: flex;
   justify-content: space-evenly;
