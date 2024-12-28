@@ -150,3 +150,7 @@ h1 {
 .logo-title {
   color: var(--secondary-color);
 }
+
+.footerAddress {
+  line-height: 25px;
+}
