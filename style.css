@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Permanent+Marker&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@ body {
 }
 
 .title {
-	font-family: "Merienda", serif;
+  font-family: "Merienda", serif;
   text-align: center;
   padding: 20px 0;
   width: 40%;
@@ -19,22 +19,23 @@ body {
 .group-title {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   width: 30%;
   margin: auto;
   font-size: 25px;
 }
 
 .title-project {
-	font-family: "Permanent Marker";
-	background-color: aliceblue;
-	text-decoration: none;
-	padding: 20px 20px;
-	border-radius: 40px;
-	color: black;
-	transition: .5s;
+  font-family: "Merienda";
+  background-color: aliceblue;
+  text-decoration: none;
+  padding: 20px 20px;
+  border-radius: 40px;
+  color: black;
+  transition: 0.5s;
 }
 .title-project:hover {
-	transform: scale(1.1);
-	background-color: #f4f6ff;
-	border: 2px solid #eb8317;
+  transform: scale(1.1);
+  background-color: #f4f6ff;
+  border: 2px solid #eb8317;
 }
