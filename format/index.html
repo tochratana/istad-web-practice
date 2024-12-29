@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 700px;
+        padding: 20px;
+        font-family: sans-serif;
+        box-shadow: 1px 2px 10px rgb(177, 176, 176);
+      }
+      h1 {
+        text-align: center;
+        color: #1a56db;
+        letter-spacing: 4px;
+      }
+      button {
+        background-color: #3b82f6;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 5px;
+        width: 140px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .border {
+        border: 1px solid black;
+        display: flex;
+      }
+      .deveName {
+        color: #1a56db;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      .home {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #eb8317;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <h1 style="font-variant: small-caps">
+          T<span>ext</span> F<span>ormatting</span>
+        </h1>
+        <p>
+          Hi 👋,I am<span class="deveName"> DEVELOPERS CAMBODIA</span> Team.
+        </p>
+        <p class="monospace">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <span class="border"></span>
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <button>Learn👋more</button>
+      </div>
+    </div>
+    <a href="../../index.html" class="home"
+      ><i class="fa-solid fa-house"></i
+    ></a>
+  </body>
+</html>
