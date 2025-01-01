@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HTML-Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Toch Ratana</h1>
+
+    <div style="display: flex; align-items: center; gap: 10px">
+      <i class="fa-solid fa-map-pin" style="color: #ff0000"></i>
+      <p>123 Maple Street, Apt. 456, Phnom Penh, Cambodia</p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px">
+      <i class="fa-solid fa-phone" style="color: #ff0000"></i>
+      <p>(855) 123-4567</p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px">
+      <i class="fa-solid fa-envelope" style="color: #a9700f"></i>
+      <p>ratanatoch58@gmail.com</p>
+    </div>
+    <h2>Skill Matrix</h2>
+    <table border="1">
+      <tr>
+        <th>Skill Category</th>
+        <th>Proficiency Level</th>
+        <th>Years of Experience</th>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>Advanced</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Project Management</td>
+        <td>Intermediate</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>UI/UX Design</td>
+        <td>Beginner</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <h2>Education</h2>
+    <ul>
+      <li>
+        Bachelor of Computer Science
+        <ul>
+          <li>Royal University of Phnom Penh</li>
+          <li>GQP : 3.8/4.0</li>
+          <li>2019 - 2023</li>
+        </ul>
+      </li>
+    </ul>
+    <h2>Work Experience</h2>
+    <ol>
+      <li>
+        Senior Developer at ABC Company
+        <ul>
+          <li>Led team of 5 developers</li>
+          <li>Complete 10+ major projects</li>
+          <li>2022 - Present</li>
+        </ul>
+      </li>
+      <li>
+        Junior Developer at XYZ Corp
+        <ul>
+          <li>Frontend developer</li>
+          <li>Bug fixing and maintenance</li>
+          <li>2020 - 2022</li>
+        </ul>
+      </li>
+    </ol>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" required />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <label for="level">Level</label>
+        <select name="level" id="level">
+          <option value="1">Low</option>
+          <option value="1">Medium</option>
+          <option value="1">Hight</option>
+        </select>
+        <fieldset class="fieldset">
+          <legend>PreFerred Contact Method</legend>
+
+          <label class="email">
+            <input type="radio" name="contact" /> Email
+          </label>
+
+          <label class="phone">
+            <input type="radio" name="contact" /> Phone
+          </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+    <h1>HTML Practice Exercises</h1>
+    <ol>
+      <li>
+        Add a new section to the resume with your hobbies using an unordered
+        list
+      </li>
+      <li>Create a table showing your weekly schedule</li>
+      <li>
+        Add a form for job applications with the following fields:
+        <ul>
+          <li>Position applied for</li>
+          <li>Upload resume (file input)</li>
+          <li>Available start date</li>
+          <li>Salary expectations</li>
+        </ul>
+      </li>
+      <li>Create a nested list showing your technical skills hierarchy</li>
+      <li>Add a table comparing your skills before and after the course</li>
+    </ol>
+  </body>
+</html>
