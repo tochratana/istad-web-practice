@@ -1,0 +1,120 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-color: #1a1a1a;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+}
+.home {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #eb8317;
+}
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: #666;
+  margin-bottom: 2rem;
+}
+.nav-item {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  background: #f5f5f5;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.grid-item {
+  background-color: dodgerblue;
+  padding: 40px 20px;
+  margin: 0px 0;
+  border-radius: 10px;
+  grid-column: 1 / span 6;
+}
+
+.grid-item:nth-child(1) {
+  background-color: #333333;
+}
+.grid-item:nth-child(2) {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+.grid-item:nth-child(3) {
+  background-color: #673ab6;
+}
+
+/* 2  */
+
+.example-table {
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.example-first {
+  grid-column: 1 / span 3;
+}
+
+.example-second {
+  background-color: white;
+  color: black;
+  grid-column: 4 / span 3;
+}
+
+/* 3 */
+.question {
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.question-first {
+  grid-column: 1 / span 2;
+}
+
+.question-second {
+  grid-column: 3 / span 2;
+}
+
+.question-third {
+  grid-column: 5 / span 2;
+}
+
+.last {
+  grid-column: 1 / span 6;
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 10px;
+}

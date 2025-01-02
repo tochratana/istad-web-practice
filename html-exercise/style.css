@@ -31,3 +31,11 @@ textarea {
 .phone {
   display: flex;
 }
+.home {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #eb8317;
+}
