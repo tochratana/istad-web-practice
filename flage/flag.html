@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flage</title>
+    <link rel="stylesheet" href="../button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -43,7 +44,6 @@
       position: fixed;
       right: 20px;
       bottom: 50px;
-      padding: 20px;
       border-radius: 50%;
       background-color: #eb8317;
     }
@@ -53,9 +53,23 @@
       <div class="containerImg">
         <img src="./angkor-wat.png" alt="" class="img" />
       </div>
-      <a href="../../index.html" class="home"
-        ><i class="fa-solid fa-house"></i
-      ></a>
+      <!-- Pop button -->
+      <div class="home">
+        <button class="popup-button" onclick="togglePopup()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="popup-options" id="popupOptions">
+          <a
+            href="https://github.com/tochratana/istad-web-practice/blob/master/flage/flag.html"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="../index.html" onclick="navigateTo('page2.html')"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+        </div>
+      </div>
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>

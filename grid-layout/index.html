@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Layout</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -86,8 +87,22 @@
         </div>
       </section>
     </main>
-    <a href="../../index.html" class="home"
-      ><i class="fa-solid fa-house"></i
-    ></a>
+    <!-- Pop button -->
+    <div class="home">
+      <button class="popup-button" onclick="togglePopup()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="popup-options" id="popupOptions">
+        <a
+          href="https://github.com/tochratana/istad-web-practice/blob/master/grid-layout/index.html"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="../index.html" onclick="navigateTo('page2.html')"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+      </div>
+    </div>
+    <script src="../script.js"></script>
   </body>
 </html>

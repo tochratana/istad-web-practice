@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -18,6 +19,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        /* position: relative; */
       }
       .container {
         /* border: 2px solid black; */
@@ -34,7 +36,7 @@
         color: #1a56db;
         letter-spacing: 4px;
       }
-      button {
+      .learn-more {
         background-color: #3b82f6;
         border: none;
         color: white;
@@ -59,7 +61,7 @@
         position: fixed;
         right: 20px;
         bottom: 50px;
-        padding: 20px;
+        /* padding: 20px; */
         border-radius: 50%;
         background-color: #eb8317;
       }
@@ -84,11 +86,25 @@
           It uses utility classes for typography and spacing to space content
           out within the larger container.
         </p>
-        <button>Learn👋more</button>
+        <button class="learn-more">Learn👋more</button>
       </div>
     </div>
-    <a href="../../index.html" class="home"
-      ><i class="fa-solid fa-house"></i
-    ></a>
+    <!-- Pop button -->
+    <div class="home">
+      <button class="popup-button" onclick="togglePopup()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="popup-options" id="popupOptions">
+        <a
+          href="https://github.com/tochratana/istad-web-practice/blob/master/format/index.html"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="../index.html" onclick="navigateTo('page2.html')"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+      </div>
+    </div>
+    <script src="../script.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <title>HTML-Exercise</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../button.css" />
   </head>
   <body>
     <h1>Toch Ratana</h1>
@@ -137,8 +138,22 @@
       <li>Create a nested list showing your technical skills hierarchy</li>
       <li>Add a table comparing your skills before and after the course</li>
     </ol>
-    <a href="../../index.html" class="home"
-      ><i class="fa-solid fa-house"></i
-    ></a>
+    <!-- Pop button -->
+    <div class="home">
+      <button class="popup-button" onclick="togglePopup()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="popup-options" id="popupOptions">
+        <a
+          href="https://github.com/tochratana/istad-web-practice/blob/master/html-exercise/index.html"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="../index.html" onclick="navigateTo('page2.html')"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+      </div>
+    </div>
+    <script src="../script.js"></script>
   </body>
 </html>

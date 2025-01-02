@@ -1,3 +1,7 @@
+body {
+  position: relative;
+  height: 100vh;
+}
 fieldset {
   border: 2px solid #4caf50;
   padding: 15px;
@@ -35,7 +39,8 @@ textarea {
   position: fixed;
   right: 20px;
   bottom: 50px;
-  padding: 20px;
   border-radius: 50%;
   background-color: #eb8317;
 }
+
+/* Pop up style */

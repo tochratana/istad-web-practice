@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/cart.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../../button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -15,7 +16,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   </head>
   <header>
     <a
@@ -374,9 +374,6 @@
         </div>
       </div>
     </div>
-    <a href="../../index.html" class="home"
-      ><i class="fa-solid fa-house"></i
-    ></a>
   </body>
   <footer class="footer">
     <div class="footer-content">
@@ -417,18 +414,30 @@
         </div>
       </div>
     </div>
-    <a href="../../index.html" class="home"
-      ><i class="fa-solid fa-house"></i
-    ></a>
-
     <div class="footer-bottom">
       <p>&copy; 2024 Toch Ratana. All rights reserved.</p>
     </div>
   </footer>
+  <div class="home">
+    <button class="popup-button" onclick="togglePopup()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="popup-options" id="popupOptions">
+      <a
+        href="https://github.com/tochratana/istad-web-practice/blob/master/FlexBox/page/webdesign.html"
+        target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="../../index.html" onclick="navigateTo('page2.html')"
+        ><i class="fa-solid fa-house"></i
+      ></a>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init();
-      });
-    </script>
+  <script src="../../script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
 </html>
