@@ -24,6 +24,7 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       .hero-section {
         /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
@@ -48,9 +49,12 @@
         height: auto;
         border-radius: 10px;
       }
+      #typed-output {
+        font-size: 30px;
+      }
     </style>
   </head>
-  <body>
+  <body id="particles-js">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
@@ -72,7 +76,7 @@
               <a class="nav-link active" aria-current="page" href="#!">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/">About</a>
+              <a class="nav-link" href="">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -87,7 +91,9 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#!">All Products</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                <li>
+                  <a class="dropdown-item" href="#!">Popular Items</a>
+                </li>
                 <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
               </ul>
             </li>
@@ -108,19 +114,28 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 hero-content">
-              <h1 class="hero-title">Coffe Now</h1>
+              <h1 class="hero-title">
+                Get <span class="typed-text text-warning"></span>
+              </h1>
               <p class="hero-subtitle">
-                Explore our latest collection of premium fashion and
-                accessories.
+                Your home is a reflection of who you are. That’s why you can
+                decorate it just as you like. We will make you a table that will
+                fit your interior and draw everyone’s attention. Hoom table is
+                not an ordinary table. It’s a piece of work created by
+                experienced and talented people who are obsessed with details.
               </p>
               <div class="d-flex gap-3">
                 <button class="btn btn-primary btn-lg">Shop Now</button>
-                <button class="btn btn-outline-light btn-lg text-dark bg-gray-500">Learn More</button>
+                <button
+                  class="btn btn-outline-light btn-lg text-dark bg-gray-500"
+                >
+                  Learn More
+                </button>
               </div>
             </div>
             <div class="col-lg-6">
               <img
-                src="./img/coffe-shop.svg"
+                src="./img/anime.svg"
                 alt="Fashion Collection"
                 class="hero-img"
               />
@@ -136,14 +151,10 @@
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Product image-->
-              <img
-                class="card-img-top"
-                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                alt="..."
-              />
+              <img class="card-img-top" src="./img/01.jpg" alt="..." />
               <!-- Product details-->
               <div class="card-body p-4">
                 <div class="text-center">
@@ -163,7 +174,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Sale badge-->
               <div
@@ -175,7 +186,7 @@
               <!-- Product image-->
               <img
                 class="card-img-top"
-                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                src="https://www.agati.com/wp-content/uploads/2021/11/GEE-COVE-8-Seat.jpg"
                 alt="..."
               />
               <!-- Product details-->
@@ -210,7 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Sale badge-->
               <div
@@ -222,7 +233,7 @@
               <!-- Product image-->
               <img
                 class="card-img-top"
-                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                src="https://m.media-amazon.com/images/I/61nCBBp1F3S._AC_UF894,1000_QL80_.jpg"
                 alt="..."
               />
               <!-- Product details-->
@@ -247,12 +258,12 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Product image-->
               <img
                 class="card-img-top"
-                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                src="https://i.pinimg.com/474x/24/1a/b3/241ab368375970b8639e8202ca099e8f.jpg"
                 alt="..."
               />
               <!-- Product details-->
@@ -284,7 +295,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Sale badge-->
               <div
@@ -321,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Product image-->
               <img
@@ -348,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Sale badge-->
               <div
@@ -395,7 +406,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-5">
+          <div class="col mb-5" data-aos="zoom-in-up">
             <div class="card h-100">
               <!-- Product image-->
               <img
@@ -443,6 +454,23 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      const options = {
+        strings: ["Homely", "Spacious", "Modern"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+        showCursor: false,
+      };
+
+      const typed = new Typed(".typed-text", options);
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Bootstrap core JS-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>/ -->
     <script src="./script.js"></script>
